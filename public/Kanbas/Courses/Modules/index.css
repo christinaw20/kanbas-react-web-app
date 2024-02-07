@@ -32,8 +32,8 @@
 }
 
 .wd-modules-buttons {
-    float: right;
-    margin: 10px;
+  float: right;
+  margin: 10px;
 }
 
 .wd-modules-buttons button.btn-primary {
@@ -53,5 +53,3 @@
   margin: 0px;
   border-radius: 5px;
 }
-
-

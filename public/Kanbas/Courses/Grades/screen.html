@@ -1,154 +1,216 @@
 <html>
-
-<head> 
+  <head>
     <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="/Kanbas/styles.css" />
     <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
     <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
-    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.css"
-    rel="stylesheet"/>
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <table width="100%">
-        <tbody>
-            <tr>
-                <td valign="top">
-                    <ul class="wd-kanbas-navigation">
-                        <li><a href="http://northeastern.edu">
-                            <img width="60px" src="https://instructure-uploads.s3.amazonaws.com/account_145230000000000001/attachments/949/NU_MonoLVX_RGB_RW.png" /></a></li>
-                        <li><a href="/Kanbas/Account/Profile/screen.html">
-                            <i class="fa-regular fa-circle-user" style="color: white;"></i> Account</a></li>
-                        <li class="wd-active">
-                          <a href="/Kanbas/Dashboard/screen.html">
-                            <i class="fa fa-tachometer-alt"></i> Dashboard</a>
-                        </li>
-                        <li><a href="/Kanbas/Courses/Home/screen.html"> 
-                            <i class="fa fa-book"></i> Courses</a></li>
-                        <li><a href="#">
-                            <i class="fa fa-calendar-days"></i> Calendar</a></li>
-                        <li><a href="#">
-                            <i class="fa fa-inbox"></i> Inbox</a></li>
-                        <li><a href="#">
-                            <i class="fa-regular fa-clock"></i> History</a></li>
-                        <li><a href="#">
-                            <i class="fa fa-display"></i> Studio</a></li>
-                        <li><a href="#">
-                            <i class="fa fa-right-from-bracket"></i> Commons</a></li>
-                        <li><a href="#">
-                            <i class="fa-regular fa-circle-question"></i> Help</a></li>
-                    </ul>
-                </td>
-                <td valign="top">
-                    <ul class="wd-navigation">
-                        <li><a href="/Kanbas/Courses/Home/screen.html"> Home</a></li>
-                        <li><a href="#"> Modules</a></li>
-                        <li><a href="#"> Piazza</a></li>
-                        <li><a href="#"> Zoom Meetings</a></li>
-                        <li><a href="/Kanbas/Courses/Assignments/screen.html"> Assignments</a></li>
-                        <li><a href="#"> Quizzes</a></li>
-                        <li class="wd-active"><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
-                        <li><a href="#"> People</a></li>
-                        <li><a href="#"> Panopto Video</a></li>
-                        <li><a href="#"> Discussions</a></li>
-                        <li><a href="#"> Announcements</a></li>
-                        <li><a href="#"> Pages</a></li>
-                        <li><a href="#"> Files</a></li>
-                        <li><a href="#"> Rubrics</a></li>
-                        <li><a href="#"> Outcomes</a></li>
-                        <li><a href="#"> Collaborations</a></li>
-                        <li><a href="#"> Syllabus</a></li>
-                        <li><a href="#"> Settings</a></li>
-                    </ul>
-                </td>
-                <td valign="top">
-                    <select>
-                        <option>Gradboook</option>
-                        <option>Change Gradboook View</option>
-                        <option>Traditional Gradboook</option>
-                        <option>Individual Gradboook</option>
-                    </select>
-                    <button>Import</button>
-                    <select>
-                        <option>Export</option>
-                        <option>Export Current Gradebook</option>
-                        <option>Export Entire Gradbook</option>
-                    </select>
-                    <button>Configure</button>
-                    <br />
-                    <h3>Student Names</h3>
-                    <input placeholder="Search Students" /><br />
-                    <h3>Assignment Names</h3>
-                    <input placeholder="Search Assignments" /><br />
-                    <br />
-                    <button>Apply Filters</button> <br />
-                    <br />
-                    <table border="1" width="100%">
-                        <thead>
-                            <tr>
-                                <th rowspan="2">Student Names</th>
-                                <th rowspan="2">A1 SETUP <br /> Out of 100</th>
-                                <th rowspan="2">A2 HTML <br /> Out of 100</th>
-                                <th rowspan="2">A3 CSS <br /> Out of 100</th>
-                                <th rowspan="2">A4 BOOTSTRAP <br /> Out of 100</th>
-                                <th rowspan="2">A5 JAVASCRIPT <br /> Out of 100</th>
-                                <th rowspan="2">A6 REACT <br /> Out of 100</th>
-                                <th rowspan="2">A7 REDUX <br /> Out of 100</th>
-                                <th rowspan="2">A8 NONE <br /> Out of 100</th>
-                                <th rowspan="2">A9 MONGO <br /> Out of 100</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Alice Wonderland</td>
-                                <td>98</td>
-                                <td>89</td>
-                                <td>87</td>
-                                <td><input type="number" value="90" /></td>
-                                <td>89</td>
-                                <td>94</td>
-                                <td>88</td>
-                                <td>87</td>
-                                <td>100</td>
-                            </tr>
-                            <tr>
-                                <td>Princes Leia</td>
-                                <td>98</td>
-                                <td>80</td>
-                                <td>87</td>
-                                <td>86</td>
-                                <td>100</td>
-                                <td>94</td>
-                                <td>85</td>
-                                <td>84</td>
-                                <td><input type="number" value="92" /></td>
-                            </tr>
-                            <tr>
-                                <td>Luke Skywalker</td>
-                                <td>99</td>
-                                <td><input type="number" value="88" /></td>
-                                <td>97</td>
-                                <td>82</td>
-                                <td>96</td>
-                                <td>93</td>
-                                <td>95</td>
-                                <td>100</td>
-                                <td>93</td>
-                            </tr>
-                            <tr>
-                                <td>Han Solo</td>
-                                <td>83</td>
-                                <td><input type="number" value="99" /></td>
-                                <td>94</td>
-                                <td>98</td>
-                                <td>86</td>
-                                <td>85</td>
-                                <td>86</td>
-                                <td>80</td>
-                                <td>84</td>
-                            </tr>
-                        </tbody>
-                    </table>
-</body>
-
+      <tbody>
+        <tr>
+          <td valign="top">
+            <ul class="wd-kanbas-navigation">
+              <li>
+                <a href="http://northeastern.edu">
+                  <img
+                    width="60px"
+                    src="https://instructure-uploads.s3.amazonaws.com/account_145230000000000001/attachments/949/NU_MonoLVX_RGB_RW.png"
+                /></a>
+              </li>
+              <li>
+                <a href="/Kanbas/Account/Profile/screen.html">
+                  <i class="fa-regular fa-circle-user" style="color: white"></i>
+                  Account</a
+                >
+              </li>
+              <li>
+                <a href="/Kanbas/Dashboard/screen.html">
+                  <i class="fa fa-tachometer-alt"></i> Dashboard</a
+                >
+              </li>
+              <li class="wd-active">
+                <a href="/Kanbas/Courses/Home/screen.html">
+                  <i class="fa fa-book"></i> Courses</a
+                >
+              </li>
+              <li>
+                <a href="#"> <i class="fa fa-calendar-days"></i> Calendar</a>
+              </li>
+              <li>
+                <a href="#"> <i class="fa fa-inbox"></i> Inbox</a>
+              </li>
+              <li>
+                <a href="#"> <i class="fa-regular fa-clock"></i> History</a>
+              </li>
+              <li>
+                <a href="#"> <i class="fa fa-display"></i> Studio</a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-right-from-bracket"></i> Commons</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-regular fa-circle-question"></i> Help</a
+                >
+              </li>
+            </ul>
+          </td>
+          <td valign="top">
+            <ul class="wd-navigation">
+              <li><a href="/Kanbas/Courses/Home/screen.html"> Home</a></li>
+              <li>
+                <a href="/Kanbas/Courses/Modules/screen.html"> Modules</a>
+              </li>
+              <li><a href="#"> Piazza</a></li>
+              <li><a href="#"> Zoom Meetings</a></li>
+              <li>
+                <a href="/Kanbas/Courses/Assignments/screen.html">
+                  Assignments</a
+                >
+              </li>
+              <li><a href="#"> Quizzes</a></li>
+              <li class="wd-active">
+                <a href="/Kanbas/Courses/Grades/screen.html"> Grades</a>
+              </li>
+              <li><a href="#"> People</a></li>
+              <li><a href="#"> Panopto Video</a></li>
+              <li><a href="#"> Discussions</a></li>
+              <li><a href="#"> Announcements</a></li>
+              <li><a href="#"> Pages</a></li>
+              <li><a href="#"> Files</a></li>
+              <li><a href="#"> Rubrics</a></li>
+              <li><a href="#"> Outcomes</a></li>
+              <li><a href="#"> Collaborations</a></li>
+              <li><a href="#"> Syllabus</a></li>
+              <li><a href="#"> Settings</a></li>
+            </ul>
+          </td>
+          <td valign="top">
+            <select>
+              <option>Gradboook</option>
+              <option>Change Gradboook View</option>
+              <option>Traditional Gradboook</option>
+              <option>Individual Gradboook</option>
+            </select>
+            <button>Import</button>
+            <select>
+              <option>Export</option>
+              <option>Export Current Gradebook</option>
+              <option>Export Entire Gradbook</option>
+            </select>
+            <button>Configure</button>
+            <br />
+            <h3>Student Names</h3>
+            <input placeholder="Search Students" /><br />
+            <h3>Assignment Names</h3>
+            <input placeholder="Search Assignments" /><br />
+            <br />
+            <button>Apply Filters</button> <br />
+            <br />
+            <table border="1" width="100%">
+              <thead>
+                <tr>
+                  <th rowspan="2">Student Names</th>
+                  <th rowspan="2">
+                    A1 SETUP <br />
+                    Out of 100
+                  </th>
+                  <th rowspan="2">
+                    A2 HTML <br />
+                    Out of 100
+                  </th>
+                  <th rowspan="2">
+                    A3 CSS <br />
+                    Out of 100
+                  </th>
+                  <th rowspan="2">
+                    A4 BOOTSTRAP <br />
+                    Out of 100
+                  </th>
+                  <th rowspan="2">
+                    A5 JAVASCRIPT <br />
+                    Out of 100
+                  </th>
+                  <th rowspan="2">
+                    A6 REACT <br />
+                    Out of 100
+                  </th>
+                  <th rowspan="2">
+                    A7 REDUX <br />
+                    Out of 100
+                  </th>
+                  <th rowspan="2">
+                    A8 NONE <br />
+                    Out of 100
+                  </th>
+                  <th rowspan="2">
+                    A9 MONGO <br />
+                    Out of 100
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Alice Wonderland</td>
+                  <td>98</td>
+                  <td>89</td>
+                  <td>87</td>
+                  <td><input type="number" value="90" /></td>
+                  <td>89</td>
+                  <td>94</td>
+                  <td>88</td>
+                  <td>87</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>Princes Leia</td>
+                  <td>98</td>
+                  <td>80</td>
+                  <td>87</td>
+                  <td>86</td>
+                  <td>100</td>
+                  <td>94</td>
+                  <td>85</td>
+                  <td>84</td>
+                  <td><input type="number" value="92" /></td>
+                </tr>
+                <tr>
+                  <td>Luke Skywalker</td>
+                  <td>99</td>
+                  <td><input type="number" value="88" /></td>
+                  <td>97</td>
+                  <td>82</td>
+                  <td>96</td>
+                  <td>93</td>
+                  <td>95</td>
+                  <td>100</td>
+                  <td>93</td>
+                </tr>
+                <tr>
+                  <td>Han Solo</td>
+                  <td>83</td>
+                  <td><input type="number" value="99" /></td>
+                  <td>94</td>
+                  <td>98</td>
+                  <td>86</td>
+                  <td>85</td>
+                  <td>86</td>
+                  <td>80</td>
+                  <td>84</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>

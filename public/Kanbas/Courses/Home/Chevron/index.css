@@ -1,0 +1,58 @@
+.chevron-head {
+  background-color: black;
+  color: white;
+}
+
+.chevron-head .chevron-header {
+  display: flex;
+}
+
+.chevron-head .chevron-header-left i {
+  color: white;
+  padding: 10px;
+  margin-top: 15px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.chevron-head .chevron-header-middle {
+  flex-grow: 1;
+  text-align: center;
+  padding: 10px;
+}
+
+.chevron-head .chevron-header-middle a {
+  color: white;
+  text-decoration: none;
+}
+
+.chevron-head .chevron-header-right i {
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.chevron-head a {
+  color: #b52828;
+  text-decoration: none;
+}
+
+.chevron-body {
+  background-color: white;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.chevron-body li.wd-active {
+  text-emphasis-style: bold;
+}
+
+.chevron-body i {
+  color: #b52828;
+}
+
+.chevron-body i.fa-eye-slash {
+  color: lightgrey;
+  font-size: 0.8em;
+}

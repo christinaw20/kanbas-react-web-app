@@ -1,0 +1,32 @@
+.sandwich-head a {
+  color: black;
+  width: 100%;
+  float: right;
+  margin: 10px;
+}
+
+.sandwich-body .col {
+  color: #b52828;
+  margin: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.sandwich-body a {
+  color: #b52828;
+  text-decoration: none;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+.sandwich-body i {
+  color: #b52828;
+  font-size: 1.5em;
+}
+
+.sandwich-body i.fa-chevron-right {
+  color: black;
+  float: right;
+  font-size: 1em;
+  padding-top: 5px;
+}
