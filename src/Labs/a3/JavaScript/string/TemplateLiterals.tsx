@@ -1,4 +1,4 @@
-function JsonStringify() {
+function TemplateLiterals() {
     const five = 2 + 3;
 const result1 = "2 + 3 = " + five;
 const result2 = `2 + 3 = ${2 + 3}`;
@@ -17,6 +17,6 @@ return (
     </div>
 );
   }
-  export default JsonStringify;
+  export default TemplateLiterals;
   
   
