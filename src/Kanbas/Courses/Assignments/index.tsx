@@ -9,16 +9,16 @@ function Assignments() {
   return (
     <>
     <div className="row">
+    <div className="wd-modules-buttons">
+    <input type="text" placeholder="Search for Assignment"/>
         <span className="float-end">
-      <div className="wd-modules-buttons">
-        <input type="text" placeholder="Search for Assignment" className="form-control" />
       <button className="btn-primary">+ Group</button>
       <button className="btn-secondary">+ Assignment</button>
       <button className="btn-primary">
       <FaEllipsisV className="me-2" />
       </button>
-    </div>
     </span>
+    </div>
     </div>
     <hr/>
       <ul className="list-group wd-modules">
