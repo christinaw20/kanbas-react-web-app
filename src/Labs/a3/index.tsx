@@ -7,7 +7,7 @@ import Add from "./Add";
 import TodoItem from "./todos/TodoItem";
 import TodoList from "./todos/TodoList";
 import { useSelector } from "react-redux";
-import { LabState } from "../store";
+import { LabState, TodoType } from "../store";
 
 function Assignment3() {
   const { todos } = useSelector((state: LabState) => state.todosReducer);
@@ -15,7 +15,7 @@ function Assignment3() {
       <div className="container m-0">
         <h1>Assignment 3</h1>
         <ul className="list-group">
-        {todos.map((todo) => (
+        {todos.map((todo: TodoType) => (
           <li className="list-group-item" key={todo.id}>
             {todo.title}
           </li>
