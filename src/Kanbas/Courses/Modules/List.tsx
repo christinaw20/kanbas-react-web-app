@@ -19,19 +19,21 @@ function ModuleList() {
   const module = useSelector((state: KanbasState) => 
     state.modulesReducer.module);
   const dispatch = useDispatch();
+  const [selectedModule, setSelectedModule] = useState(modulesList[0]);
+
   return (
     <>
       {/* <!-- Add buttons here --> */}
       <div className="row">
         <span className="float-end">
       <div className="wd-modules-buttons">
-      <button className="btn-primary">Collapse All</button>
-      <button className="btn-primary">View Progress</button>
-      <button className="btn-primary">
+      <button className="button-primary">Collapse All</button>
+      <button className="button-primary">View Progress</button>
+      <button className="button-primary">
       <FaCheckCircle className="text-success" /> Publish All
       </button>
-      <button className="btn-secondary">+ Module</button>
-      <button className="btn-primary">
+      <button className="button-secondary">+ Module</button>
+      <button className="button-primary">
       <FaEllipsisV className="me-2" />
       </button>
     </div>
@@ -40,30 +42,37 @@ function ModuleList() {
     <hr/>
       <ul className="list-group wd-modules">
       <li className="list-group-item">
-      <button onClick={() => dispatch(addModule({ ...module, course: courseId }))}>
+      <span className="float-end">
+      <button className="btn btn-success" onClick={() => dispatch(addModule({ ...module, course: courseId }))}>
           Add
         </button>
-        <button onClick={() => dispatch(updateModule(module))}>
+        <button className="btn btn-secondary" onClick={() => dispatch(updateModule(module))}>
           Update
         </button>
-        <input value={module.name}
+      </span>
+      <div className="row">
+        <input className="form-control" value={module.name}
           onChange={(e) => dispatch(setModule({ ...module, name: e.target.value }))}
         />
         <textarea value={module.description}
           onChange={(e) => dispatch(setModule({ ...module, description: e.target.value }))}
         />
+      </div>
       </li>
         {modulesList.filter((module) => module.course === courseId).map((module, index) => (
           <li key={index}
-            className="list-group-item">
-              <button
+            className="list-group-item" 
+            onClick={() => setSelectedModule(module)}>
+              <span className="float-end">
+              <button className="btn btn-secondary"
               onClick={() => dispatch(setModule(module))}>
               Edit
             </button>
-              <button
+              <button className="btn btn-danger"
               onClick={() => dispatch(deleteModule(module._id))}>
               Delete
             </button>
+            </span>
             <div>
               <FaEllipsisV className="me-2" />
               {module.name}
@@ -73,9 +82,9 @@ function ModuleList() {
                 <FaEllipsisV className="ms-2" />
               </span>
             </div>
-            {/* {selectedModule._id === module._id && (
+            {selectedModule._id === module._id && (
               <ul className="list-group">
-                {module.lessons?.map((lesson, index) => (
+                {module.lessons?.map((lesson:any, index:any) => (
                   <li className="list-group-item" key={index}>
                     <FaEllipsisV className="me-2" />
                     {lesson.name}
@@ -86,7 +95,7 @@ function ModuleList() {
                   </li>
                 ))}
               </ul>
-            )} */}
+            )}
           </li>
         ))}
       </ul>
